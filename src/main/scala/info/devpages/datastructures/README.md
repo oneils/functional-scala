@@ -1,3 +1,9 @@
+
+## Algebraic data type (ADT)
+An ADT is just a data type defined by one or more data constructors, each of which may contain zero or more arguments. 
+We say that the data type is the sum or union of its data constructors, and each data constructor is the product of its 
+arguments, hence the name algebraic data type
+
 ## Defining functional data structure
 
 Additing arameter `[+A]` after sealed trait List and then using that `A` parameter inside of `Cons` data constructor declares the `List` 
