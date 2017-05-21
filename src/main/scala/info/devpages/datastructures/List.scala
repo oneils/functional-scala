@@ -93,11 +93,6 @@ object List {
     case Cons(x, xs) => Cons(x.toString, double2String(xs))
   }
 
-  def foldRight2[A, B](as: List[A], z: B)(f: (A, B) => B): B = as match {
-    case Nil => z
-//    case Cons(x, Nil) => Cons(f, Nil)
-  }
-
   /**
     * Variadic function
     *
