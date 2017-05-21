@@ -1,0 +1,17 @@
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# SBT
+dist
+project/boot
+project/plugins/target
+target
+.target
+
+# Play
+logs
+RUNNING_PID
