@@ -1,3 +1,10 @@
+# About 
+
+This package is for Chapter 3: `Functional Data Structures`.
+
+All implementations and examples could be found under `main/scala/info.devpages/chapter3` folder.
+Also there're tests for solved exercises which are here: `test/scala/indo.devpages/chapter3`
+
 
 ## Algebraic data type (ADT)
 An ADT is just a data type defined by one or more data constructors, each of which may contain zero or more arguments. 
@@ -6,12 +13,11 @@ arguments, hence the name algebraic data type
 
 ## Defining functional data structure
 
-Additing arameter `[+A]` after sealed trait List and then using that `A` parameter inside of `Cons` data constructor declares the `List` 
+Addition of a parameter `[+A]` after sealed trait List and then using that `A` parameter inside of `Cons` data constructor declares the `List` 
  data type to be `polymorphic` in the type of elements.
  
  `+` indicates that the type parameters `A` is `covariant` or `positive` parameter of `List`.
- This means that, for instance, `List[Dog]` is considered a subtype of List[Animal],
- assuming `Dog` is a subtype of `Animal`.
+ This means that, for instance, `List[Dog]` is considered a subtype of List[Animal], assuming `Dog` is a subtype of `Animal`.
  it allows to declare such data types:
  
  ```scala
@@ -30,7 +36,7 @@ a `List[Int]`, a `List[Double]`, and so on, exactly as we want.
 `apply` is a Variadic function in `List`, meaning it acceppts zero or more arguments of type `A`
 In other words it mean we can construct instances of the data type (`list literals`) like:
 
-```scla
+```scala
 List(1, 2, 3, 4)
 List("aaa", "bbbb")
 ```
