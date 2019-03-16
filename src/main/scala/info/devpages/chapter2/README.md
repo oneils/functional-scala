@@ -18,3 +18,6 @@
 `parametric polymorphism` is not related to subtyping or inheritance relations.
 
 `generic` function is a function which is abstracted over the type of the parameter(-s).
+
+`partially applied function` is an expression in which you don't supply all of the arguments needed by the function. 
+You supply only some or none of the required arguments.
