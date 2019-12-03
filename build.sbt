@@ -2,9 +2,6 @@ name := "functional-scala"
 
 version := "1.0"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.1"
 
-libraryDependencies ++= Seq(
-  "org.scalatest" % "scalatest_2.12" % "3.0.3"
-)
-        
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % Test
