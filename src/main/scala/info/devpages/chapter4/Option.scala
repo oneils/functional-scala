@@ -46,6 +46,8 @@ trait Option[+A] {
     case Some(x) if f(x) => this
     case _ => None
   }
+
+  def lift[A, B](f: A => B): Option[A] => Option[B] = _.map(f)
 }
 
 
@@ -54,10 +56,9 @@ case class Some[A](get: A) extends Option[A]
 case object None extends Option[Nothing]
 
 
-
 object Option {
   // Exaample of implementation of total function for mean: it take each value of input type to exactly one value of output type
-  def mean (xs: Seq[Double] ): Option[Double] =
+  def mean(xs: Seq[Double]): Option[Double] =
     if (xs.isEmpty) None
     else Some(xs.sum / xs.length)
 }

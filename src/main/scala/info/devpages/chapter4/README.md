@@ -20,3 +20,8 @@ def mean(xs: Seq[Double]): Double =
 ```
 
 `mean` is a partial function because it's not defined for some inputs.
+
+### Usage sscenarios for Option's functions
+
+`map` function can be used to transform the result inside an Option, if its exists.  We can think of it as proceeding with a computation on the
+assumption that an error hasn’t occurred; it’s also a way of deferring the error handling to later code.
